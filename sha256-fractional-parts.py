@@ -8,19 +8,12 @@
 import math
 
 h0 = hex(int(math.modf(math.sqrt(2))[0] * (1 << 32)))
-
 h1 = hex(int(math.modf(math.sqrt(3))[0] * (1 << 32)))
-
 h2 = hex(int(math.modf(math.sqrt(5))[0] * (1 << 32)))
-
 h3 = hex(int(math.modf(math.sqrt(7))[0] * (1 << 32)))
-
 h4 = hex(int(math.modf(math.sqrt(11))[0] * (1 << 32)))
-
 h5 = hex(int(math.modf(math.sqrt(13))[0] * (1 << 32)))
-
 h6 = hex(int(math.modf(math.sqrt(17))[0] * (1 << 32)))
-
 h7 = hex(int(math.modf(math.sqrt(19))[0] * (1 << 32)))
 
 print(h0)
