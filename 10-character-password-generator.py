@@ -1,7 +1,8 @@
 import string
 import secrets
 
-# Generate a ten-character alphanumeric password:
+# Generate a ten-character alphanumeric password with at least 3 numbers:
+
 alphabet10 = string.ascii_letters + string.digits
 while True:
     password10 = "".join(secrets.choice(alphabet10) for i in range(10))
