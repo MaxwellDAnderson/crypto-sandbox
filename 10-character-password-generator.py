@@ -1,3 +1,7 @@
+# This example was taken directly from the Python Documentation for the
+# secrets module, which can be found here:
+# https://docs.python.org/3/library/secrets.html
+
 import string
 import secrets
 
