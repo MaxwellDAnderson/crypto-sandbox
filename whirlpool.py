@@ -1,4 +1,6 @@
 # Requires the whirlpool module, which can be downloaded with pip install whirlpool
+# You can check out the source code for whirlpool on the devs' GitHub page:
+# https://github.com/oohlaf/python-whirlpool
 
 import whirlpool
 
