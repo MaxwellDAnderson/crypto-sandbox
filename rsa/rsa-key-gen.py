@@ -2,6 +2,11 @@
 Generates and serializes public-private RSA key pair and saves them as .PEM
 files on the desktop. You should not keep these files on the desktop. The
 keys are initially saved to the desktop for convenience.
+
+This script requires use of the cryptography module, which can be
+downloaded with "pip install cryptography" in the command line.
+For more information and documentation check out the devs' GitHub page:
+    https://github.com/pyca/cryptography
 '''
 
 
