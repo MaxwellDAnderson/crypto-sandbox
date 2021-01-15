@@ -1,6 +1,7 @@
 '''
 Generates and serializes public-private RSA key pair and saves them as .PEM
-files on the desktop.
+files on the desktop. You should not keep these files on the desktop. The
+keys are initially saved to the desktop for convenience.
 '''
 
 
@@ -11,23 +12,35 @@ import os
 import time
 
 class privatekey:
+
+    # Private key generation
     private_key = rsa.generate_private_key(
         public_exponent = 65537,
         key_size = 4096,
     )
 
+    # Private key serialization
     pem_private = private_key.private_bytes(
         encoding=serialization.Encoding.PEM,
         format=serialization.PrivateFormat.TraditionalOpenSSL,
         encryption_algorithm = serialization.NoEncryption()
     )
 
+    # Gets username for use in file creation
     username = os.getlogin()
-    timestamp = time.strftime("%Y-%m-%d-%H%M%S")
-    priv_file = open(f"C:\\Users\\{username}\\Desktop\\{timestamp}__PRIVATE__Key.pem", "wb")
-    priv_file.write(pem_private)
-    priv_file.close()
 
+    # Date and time format for the file
+    timestamp = time.strftime("%Y-%m-%d-%H%M%S")
+
+    # Creates file on Desktop with the date and time in proper format.
+    # Since the keys are byte-like objects, "wb" (write bytes) is used.
+    priv_file = open(f"C:\\Users\\{username}\\Desktop\\{timestamp}__PRIVATE__Key.pem", "wb")
+
+    # Writes the private key to the file
+    priv_file.write(pem_private)
+
+    # Closes the private key file.
+    priv_file.close()
 
 
 class publickey:
