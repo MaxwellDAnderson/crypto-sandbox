@@ -5,7 +5,7 @@ from pgpy import PGPMessage
 from pgpy import PGPKey
 
 
-pubkey, _ = PGPKey.from_file("C:/Users/MDA/Desktop/pgpkeys/protonmail-publickey.asc")
+pubkey, _ = PGPKey.from_file("path/to/publickey.asc")
 msg = PGPMessage.new("asdf")
 pubkey.encrypt(msg)
 
