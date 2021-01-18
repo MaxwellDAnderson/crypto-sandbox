@@ -27,7 +27,7 @@ while greeting != "y" and greeting != "n":
 
 
 
-path = "C:/Users/MDA/Desktop/pgpkeys" #/path/to/public/key/directory"
+path = "/path/to/public/key/directory"
 file_names = os.listdir(path)
 separator = "-"
 file_numbers = [x for x in range(len(file_names)) if x <= len(file_names)]
