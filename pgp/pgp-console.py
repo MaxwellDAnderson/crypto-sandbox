@@ -8,6 +8,10 @@ from pgpy import PGPKey
 
 greeting = input("Would you like to transmit an encrypted message? (Y)/(N) ").lower()
 print(greeting)
+
+if greeting == "n":
+    sys.exit("Okay. Goodbye.")
+
 while greeting != "y" and greeting != "n":
     invalid_entry = "You have entered an invalid choice. Please select either Y or N, followed by the Enter/Return key."
     print(invalid_entry)
@@ -23,7 +27,7 @@ while greeting != "y" and greeting != "n":
 
 
 
-path = "/path/to/public/key/directory"
+path = "C:/Users/MDA/Desktop/pgpkeys" #/path/to/public/key/directory"
 file_names = os.listdir(path)
 separator = "-"
 file_numbers = [x for x in range(len(file_names)) if x <= len(file_names)]
