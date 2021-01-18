@@ -1,5 +1,8 @@
 # crypto-sandbox
 
+**2021-01-17:** Finished a console program that lists the public keys in
+a file directory, and produces a PGP message block from user input.
+
 **2021-01-14:** I created this repository, because I started really getting
 into cryptography. This sandbox is where I plan to experiment with what I
 learn. Currently, most of it is pretty elementary. But I thought maybe some
