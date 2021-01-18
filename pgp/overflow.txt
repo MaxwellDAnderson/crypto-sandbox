@@ -1,0 +1,47 @@
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* When I am working, I usually do not delete my discarded code. Instead,  *
+* I simply comment it out and hit enter a few times. I do this primarily  *
+* to keep track of what I have already tried. To the extent this code may *
+* help anyone on a project they are working on, I have pasted it below.   *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+'''
+while key_selection not in str(file_numbers) and key_selection.isalpha():
+    invalid_recipient = ""
+    key_selection_2 = input("Please enter the number of the message recipient: ")
+
+# message_recipient = file_names[INPUT NUMBER]
+'''
+
+'''
+def print_keys():
+
+    a, b = 0
+    print(file_numbers[a], file_names[b])
+    x += 1
+'''
+
+'''
+for x in range(len(file_names)):
+    file_numbers.append(x)
+    # print(x)
+
+'''
+# print(file_numbers)
+
+
+'''
+def create_file_index():
+    i = 0
+    for x in file_names:
+        file_index = []
+        file_index.append([i][0])
+        i += 1
+        print(file_index)
+
+
+create_file_index()
+'''
+#
