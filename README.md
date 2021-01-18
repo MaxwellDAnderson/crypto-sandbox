@@ -1,4 +1,4 @@
-# crypto-sandbox
+# Cryptography Sandbox
 
 **2021-01-17:** Finished a console program that lists the public keys in
 a file directory, and produces a PGP message block from user input.
