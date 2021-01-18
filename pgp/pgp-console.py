@@ -23,7 +23,7 @@ while greeting != "y" and greeting != "n":
 
 
 
-path = "/path/to/public/keys"
+path = "C:/Users/MDA/Desktop/pgpkeys"
 file_names = os.listdir(path)
 separator = "-"
 file_numbers = [x for x in range(len(file_names)) if x <= len(file_names)]
@@ -38,12 +38,13 @@ while True:
         print("You have not entered a number. Please try again.")
         continue
     else:
-        if key_selection <= len(file_numbers):
+        if key_selection <= len(file_numbers) - 1:
             message_recipient = file_names[key_selection]
             break
-        elif key_selection > len(file_numbers):
+        elif key_selection > len(file_numbers) - 1:
             print("You have entered an invalid number. Please try again.")
             continue
+
 
 key_path = path + "/" + message_recipient
 
