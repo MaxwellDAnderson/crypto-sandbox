@@ -6,6 +6,17 @@
 * help anyone on a project they are working on, I have pasted it below.   *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
+#except IndexError:
+   #   print("You have entered an invalid number. Pleases try again.")
+    #  continue
+
+
+
+    # elif key_selection > len(file_numbers):
+          #  raise IndexError
+           # print("You have entered an invalid number. Please try again.")
+            #continue
+
 
 '''
 while key_selection not in str(file_numbers) and key_selection.isalpha():
